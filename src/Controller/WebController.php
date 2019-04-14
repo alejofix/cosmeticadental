@@ -16,4 +16,15 @@ class WebController extends AbstractController
             'controller_name' => 'WebController',
         ]);
     }
+
+    /**
+     * @Route("/contact", name="contact")
+     */
+    public function contact()
+    {
+        return $this->render('web/contact.html.twig', [
+            'controller_name' => 'WebController',
+        ]);
+    }
+
 }
